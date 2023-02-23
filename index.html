@@ -7,6 +7,7 @@
     <title>Formulario</title>
     <link rel="stylesheet" href="src/css/reset.css" />
     <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,27 +32,27 @@
       <section>
         <form action="" id="formulario">
           <div>
-            <input id="campo" type="text" name="nome" placeholder="Nome Completo *"  />
-            <p id="alerta" required></p>
+            <input class="campo" type="text" name="nome" placeholder="Nome Completo *"  />
+            <p class="alerta" >Campo obrigatório!</p>
           </div>
           <div>
-            <input class="campo" type="email" name="email" placeholder="Email *" required/>
-            <p class="alerta "></p>
+            <input class="campo" type="email" name="email" placeholder="Email *" />
+            <p class="alerta">Campo obrigatório!</p>
           </div>
 
           <div>
-            <input class="campo" type="phone" name="fone" placeholder="Telefone *" required/>
-            <p class="alerta "></p>
+            <input class="campo" type="phone" name="fone" placeholder="Telefone *" />
+            <p class="alerta">Campo obrigatório!</p>
           </div>
           <div>
 
-            <textarea class="campo" name="msg" placeholder="Mensagem *" cols="30" rows="10" required></textarea>
-            <p class="alerta "></p>
+            <textarea class="campo" name="msg" placeholder="Mensagem *" cols="30" rows="10" ></textarea>
+            <p class="alerta">Campo obrigatório!</p>
           </div> 
         
           <p class="aviso">*campos obrigatórios </p>
 
-          <button id="enviar" type="submit" name="enviar" value="Enviar">Enviar</button>
+          <button class="botao" type="submit" name="enviar" value="Enviar">Enviar</button>
 
         </form>
       </section>
